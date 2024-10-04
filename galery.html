@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet"href="css/carousel.css">
+    <link rel="stylesheet" href="css/galeri.css">
+    <link rel="stylesheet" href="js/main.js">
+
+    <title>Galery</title>
+    <style>
+        .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          user-select: none;
+        }
+  
+        @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          }
+        }
+      
+  
+        .b-example-divider {
+          width: 100%;
+          height: 3rem;
+          background-color: rgba(0, 0, 0, .1);
+          border: solid rgba(0, 0, 0, .15);
+          border-width: 1px 0;
+          box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+  
+        .b-example-vr {
+          flex-shrink: 0;
+          width: 1.5rem;
+          height: 100vh;
+        }
+  
+        .bi {
+          vertical-align: -.125em;
+          fill: currentColor;
+        }
+  
+        .nav-scroller {
+          position: relative;
+          z-index: 2;
+          height: 2.75rem;
+          overflow-y: hidden;
+        }
+  
+        .nav-scroller .nav {
+          display: flex;
+          flex-wrap: nowrap;
+          padding-bottom: 1rem;
+          margin-top: -1px;
+          overflow-x: auto;
+          text-align: center;
+          white-space: nowrap;
+          -webkit-overflow-scrolling: touch;
+        }
+  
+        .btn-bd-primary {
+          --bd-violet-bg: #712cf9;
+          --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+  
+          --bs-btn-font-weight: 600;
+          --bs-btn-color: var(--bs-white);
+          --bs-btn-bg: var(--bd-violet-bg);
+          --bs-btn-border-color: var(--bd-violet-bg);
+          --bs-btn-hover-color: var(--bs-white);
+          --bs-btn-hover-bg: #6528e0;
+          --bs-btn-hover-border-color: #6528e0;
+          --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+          --bs-btn-active-color: var(--bs-btn-hover-color);
+          --bs-btn-active-bg: #5a23c8;
+          --bs-btn-active-border-color: #5a23c8;
+        }
+  
+        .bd-mode-toggle {
+          z-index: 1500;
+        }
+  
+        .bd-mode-toggle .dropdown-menu .active .bi {
+          display: block !important;
+        }
+    
+        img{
+            object-fit: fill;
+        }
+        .card-img {
+          width: 100%;
+          height: 2005;   /* atur sesuai kebutuhan */
+          object-fit: cover;
+        }
+        .overlay-dark::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.5);
+          z-index: 1;
+        }
+      </style>
+</head>
+<body>
+    <header data-bs-theme="dark">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Meizza Fashion</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="galery.html">Galery</a>
+                  </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <main id="main">
+
+        <!-- ======= Our Portfolio Section ======= -->
+        <section class="breadcrumbs">
+          <div class="container">
+    
+            <div class="d-flex justify-content-between align-items-center">
+              <h2 align="center">Galery</h2>
+             
+            </div>
+    
+          </div>
+        </section><!-- End Our Portfolio Section -->
+    
+        <!-- ======= Portfolio Section ======= -->
+        <section class="galery">
+          <div class="container">
+    
+            <div class="row" align="center">
+              <div class="col-lg-12">
+                <ul id="galery-flters">
+                  <li data-filter="*" class="filter-active">All</li>
+                  <li data-filter=".filter-app">App</li>
+                  <li data-filter=".filter-card">Card</li>
+                  <li data-filter=".filter-web">Web</li>
+                </ul>
+              </div>
+            </div>
+    
+            <div class="row galery-container" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+    
+              <div class="col-lg-4 col-md-6 galery-wrap filter-app">
+                <div class="galery-item">
+                  <img src="img/g.4.jpg" class="img-fluid" alt="">
+                  <div class="galery-info">
+                    <h3>App 1</h3>
+                    <div>
+                      <a href="img/g.4.jpg" data-gallery="Gallery" class="galery-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                      <a href="galery.html" title="Galery Details"><i class="bx bx-link"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-4 col-md-6 galery-wrap filter-web">
+                <div class="galery-item">
+                  <img src="img/g.9.jpg" class="img-fluid" alt="">
+                  <div class="galery-info">
+                    <h3>Web 1</h3>
+                    <div>
+                      <a href="img/g.9.jpg" data-gallery="Gallery" class="galery-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                      <a href="galery.html" title="Galery Details"><i class="bx bx-link"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-4 col-md-6 galery-wra filter-app">
+                <div class="galery-item">
+                  <img src="img/g.5.jpg" class="img-fluid" alt="">
+                  <div class="galery-info">
+                    <h3>App 2</h3>
+                    <div>
+                      <a href="img/g.5.jpg" data-gallery="Galery" class="galery-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                      <a href="galery.html" title="Galery Details"><i class="bx bx-link"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-4 col-md-6 galery-wrap filter-card">
+                <div class="galery-item">
+                  <img src="img/g.8.jpg" class="img-fluid" alt="">
+                  <div class="galery-info">
+                    <h3>Card 1</h3>
+                    <div>
+                      <a href="img/g.8.jpg" data-gallery="Gallery" class="galery-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
+                      <a href="galery.html" title=" Galery Details"><i class="bx bx-link"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-4 col-md-6 galery-wrap filter-web">
+                <div class="galery-item">
+                  <img src="img/wer.jpg" class="img-fluid" alt="">
+                  <div class="galery-info">
+                    <h3>Web 2</h3>
+                    <div>
+                      <a href="img/wer.jpg" data-gallery="Gallery" class="galery-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
+                      <a href="galery.html" title="Galery Details"><i class="bx bx-link"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-4 col-md-6 galery-wrap filter-app">
+                <div class="galery-item">
+                  <img src="img/ijha.jpg" class="img-fluid" alt="">
+                  <div class="galery-info">
+                    <h3> App 3</h3>
+                    <div>
+                      <a href="img/ijha.jpg" data-gallery="Gallery" class="galery-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
+                      <a href="galery.html" title="Galery Details"><i class="bx bx-link"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-4 col-md-6 galery-wrap filter-card">
+                <div class="galery-item">
+                  <img src="img/cece.jpg" class="img-fluid" alt="">
+                  <div class="galery-info">
+                    <h3>Card 2</h3>
+                    <div>
+                      <a href="img/cece.jpg" data-gallery="Gallery" class="galery-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
+                      <a href="galery.html" title="Galery Details"><i class="bx bx-link"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-4 col-md-6 galery-wrap filter-card">
+                <div class="galery-item">
+                  <img src="img/g.7.jpg" class="img-fluid" alt="">
+                  <div class="galery-info">
+                    <h3>Card 3</h3>
+                    <div>
+                      <a href="img/g.7.jpg" data-gallery="Gallery" class="galery-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
+                      <a href="galery.html" title="Galery Details"><i class="bx bx-link"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-4 col-md-6 galery-wrap filter-web">
+                <div class="galery-item">
+                  <img src="img/g.10.jpg" class="img-fluid" alt="">
+                  <div class="galery-info">
+                    <h3>Web 3</h3>
+                    <div>
+                      <a href="img/g.10.jpg" data-gallery="Gallery" class="galery-lightbox" title="Web 1"><i class="bx bx-plus"></i></a>
+                      <a href="galery.html" title="Galery Details"><i class="bx bx-link"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+            </di<div v>
+    
+          </div>
+        </section>
+    
+      
+    </main>
+   
+  
+    
+
+      <script src="js/bootstrap.bundle.js"></script>
+      
+</body>
+</html>

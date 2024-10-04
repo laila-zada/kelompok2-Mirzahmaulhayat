@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="css/carousel.css" rel="stylesheet">
+    <title>Project-B</title>
+    <style>
+        .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          user-select: none;
+        }
+  
+        @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          }
+        }
+        img{
+            object-fit: fill;
+        }
+        .card-img {
+            width: 100%;
+            height: 200px; /* Atur sesuai kebutuhan */
+            object-fit: cover;
+        }
+        .overlay-dark::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); 
+        z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Meizza Fashion</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="galery.html">Galery</a>
+                  </li>
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="overlay-dark">
+                <img src="img/mirza - Copy.jpg" alt="" style="width: 100%; height: 100%;">
+              </div>
+              <div class="container">
+                <div class="carousel-caption text-start">
+                  <h1>Toko Baju Batik terbaik</h1>
+                  <p>Tertarik dengan busana hijabers?? Yuk, kunjungi Meizza Fashion</p>
+                  <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="overlay-dark">
+                <img src="img/hh.jpg" alt="" style="width: 100%; height: 100%;">
+              </div>
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1>Ribet cari outfit buat jalan sama temen dengan pakai hijab ?</h1>
+                  <p>Kunjungi toko kami dan anda akan menemukan outfit yang anda inginkan</p>
+                  <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="overlay-dark">
+                <img src="img/mirza - Copy.jpg" alt="" style="width: 100%; height: 100%;">
+              </div>
+              <div class="container">
+                <div class="carousel-caption text-end">
+                  <h1>Takut dibilang orang kuno kalau pake batik ?</h1>
+                  <p>Toko kami juga membuat desain baju batik moderen.</p>
+                  <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      
+      
+        <!-- Marketing messaging and featurettes
+        ================================================== -->
+        <!-- Wrap the rest of the page in another container to center all the content. -->
+      
+        <div class="container marketing">
+      
+          <!-- Three columns of text below the carousel -->
+          <div class="row" style="background-color: white;">
+            <div class="col-lg-4">
+              <img src="img/g.5.jpg" alt="" class="card-img" style="width: 50p%; height: 40%;">
+              <h2>Jaminan Kualitas</h2>
+              <p>Kami membuat baju denga bahan-bahan yang berkualitas dan tidak membahayakan kulit anda. </p>  
+              <p><a class="btn btn-secondary" href="">View details &raquo;</a></p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              <img src="img/g.7.jpg" alt="" class="card-img"  style="width: 50p%; height: 40%;" >
+              <h2>Penjahit profesional</h2>
+              <p>Kami mampu memproduksi baju yang unggul dipasaran. </p>
+              <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              <img src="img/cece.jpg" alt="" class="card-img" style="width: 50p%; height: 40%;">
+              <h2>Desain Berbeda</h2>
+              <p>Desain baju yang anda sarankan tidak akan menjadi pasaran.</p>
+              <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+            </div><!-- /.col-lg-4 -->
+          </div><!-- /.row -->
+      
+      
+          <!-- START THE FEATURETTES -->
+          <div class="row featurette" style="background-color:white;">
+            <div class="col-md-7">
+              <h2 class="featurette-heading" style="margin-top: 3.5rem;">About <span class="text-muted">Us</span></h2>
+              <p class="lead">Meizza Fashion merupakan Butik terbesar di Jawa Tengah, Indonesia kami juga memiliki cabang di Jawa Timur, kab. Banyuwangi. Telah memproduksi banyak desain-desain baju unggulan unggulan tidak kurang dari  200 desain. Dibentuk dan dikembangkan oleh tenaga ahli yang berpengalaman dan didukung dengan karyawan-karyawan muda dengan semangat tinggi yang inovatif.
+              </p>
+            </div>
+            <div class="col-md-5">
+              <img src="img/mirza.jpg" alt="" style="width: 100%;">
+      
+            </div>
+          </div>
+        </div><!-- /.container -->
+      
+        <div class="b-example-divider" style="box-shadow: none; border: none; background-color:white"></div>
+
+        <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+          <div class="row align-items-center g-lg-5 py-5">
+            <div class="col-lg-7 text-center text-lg-start">
+              <h1 class="display-4 fw-bold lh-1 mb-3">Menerima Pesanan Online</h1>
+             
+            </div>
+            <div class="col-md-10 mx-auto col-lg-5">
+              <form class="p-4 p-md-5 border rounded-3 bg-light">
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                  <label for="floatingInput">Kirim gambar</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                  <label for="floatingPassword">Size</label>
+                </div>
+                <div class="checkbox mb-3">
+                  <label>
+                    <input type="checkbox" value="remember-me"> Remember me
+                  </label>
+                </div>
+                <button class="w-100 btn btn-lg btn-primary" type="submit">Kirimkan</button>
+                <hr class="my-4">
+                <small class="text-muted">By clicking Sign up, you agree to the terms of use.</small>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="b-example-divider"></div>
+        <!-- FOOTER -->
+        <footer class="container">
+          <p class="float-end"><a href="#">Back to top</a></p>
+          <p>&copy; 2017–2021 Company, Inc. &middot; <a href="#">Public</a> &middot; <a href="#">Terms</a></p>
+        </footer>
+      </main>
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>
